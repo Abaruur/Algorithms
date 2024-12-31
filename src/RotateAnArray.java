@@ -62,3 +62,21 @@ public class RotateAnArray {
 //        }
 //
 //        }
+/// ************* Test Questions from the chapter *****
+//1. When swapping items in an array, what's an efficient way
+//we prevent data loss?
+        // Ans: Create a temp variable to hold the
+        // item that will be overwritten
+//2. When performing a binary search on a sorted array,
+// which item is checked first?
+        // Ans: The item in the middle of the array
+//3. What data structure can we use to keep a list of
+//items taht we can easily add to and remove from?
+        //Ans: ArrayList
+//4. If I want to find out if a certain item exists in
+// an array, what do I need access?
+        //Ans: The array and the item you are searching for.
+//5. How can we find a given element in an array arr that meets a certain
+// condition, c?
+        //Ans: Arrays.stream(arr).filter(c).findFirst();
+
