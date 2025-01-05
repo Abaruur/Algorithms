@@ -1,0 +1,19 @@
+LINKEDLIST 
+
+- The linked List data structure is another useful tool  when working with linear data. 
+- Elements in a linked list are linked by pointers. 
+- The idea of an index does not exist for linked lists. 
+- Each element is called a node, which contains a piece of data and a reference to the next element. 
+	Example
+6-> 9 -> 15 -> null : In this example, the node containing 6 is the first 
+node. It's linked to the 9 node through the next pointer, making the node containing 9 the second element of the list. The last element, 15, is linked through the 9 nodes next pointer. The last element of the list also contains a next pointer, but it point to null, since there is no next element in the list. 
+- The first node is called the head(here, 6)
+- The last node is called the tail (here, 15). 
+- The size of a linked list can vary over time. Since the data in linked list is not stored contiguously, the size of a linked list can vary over time. 
+- With an array, it's size must be set as soon as it's created and the size can not change. In order to store more elements in a given array, a bigger array must be created and the current items can be copied over to the larger array, along with the new items.  
+- With a linked List, this is not needed because elements are linked by pointers, which can changed or removed at any time. For example, if you need to delete half of the data set, you can simply find the middle pointer and set it to null. 
+	Original: 6 -> 9 -> 10 -> 15 -> null 
+	Modified: 6 -> 9 -> null 
+- In other languages, there might be more memory cleanup required, but in java, we have a garbage collector and this memory manager will handle it for us. 
+- Operations like these, where major data modifications can be made with just a few lines of code, make linked list a useful tool when creating algorithms that manipulate your data. 
+
