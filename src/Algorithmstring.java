@@ -100,33 +100,33 @@ public class Algorithmstring {
     // Challenge code: Reverse each word
     // Create an algorithm that reverses each word in a sentence
 
-    static String reverseEachWord(String sentence){
-        if (sentence == null || sentence.isEmpty()) {
-            return "";
-        }
-
-        StringBuilder result = new StringBuilder();
-
-        // use split function on the input to create an array of words
-        String [] words = sentence.split(" ");
-        // Iterate through the array and reverse each word individually
-        // then add them to your result StringBuilder
-        for (String word : words) {
-            result.append(reverse(word));
-            // add the spaces back, this works except for the last word,
-            // which doesn't have space at the end.
-            result.append(" ");
-            // To account the last word spacing use trimToSize call,
-            // which will trim the spaces off the end.
-            result.trimToSize();
-            // return the new string, with each word reversed.
-            // use result variable and call toString and return it from the function.
-            return result.toString();
-        }
-
-
-
-    }
+//    static String reverseEachWord(String sentence){
+//        if (sentence == null || sentence.isEmpty()) {
+//            return "";
+//        }
+//
+//        StringBuilder result = new StringBuilder();
+//
+//        // use split function on the input to create an array of words
+//        String [] words = sentence.split(" ");
+//        // Iterate through the array and reverse each word individually
+//        // then add them to your result StringBuilder
+//        for (String word : words) {
+//            result.append(reverse(word));
+//            // add the spaces back, this works except for the last word,
+//            // which doesn't have space at the end.
+//            result.append(" ");
+//            // To account the last word spacing use trimToSize call,
+//            // which will trim the spaces off the end.
+//            result.trimToSize();
+//            // return the new string, with each word reversed.
+//            // use result variable and call toString and return it from the function.
+//            return result.toString();
+//        }
+//
+//
+//
+//    }
 
     public static void main(String[] args) {
 //        System.out.println(findMaximum2(1, 2, 3));
@@ -172,8 +172,6 @@ public class Algorithmstring {
 //        System.out.println(reverse2("Hi"));
 //        System.out.println(reverse2("Makhtal"));
 
-        String s = "Real People play life!";
 
-        System.out.println(reverseEachWord(s));
     }
 }
